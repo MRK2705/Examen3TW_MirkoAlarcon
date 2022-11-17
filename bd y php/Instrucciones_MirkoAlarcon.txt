@@ -1,4 +1,4 @@
 1. Agregar la carpeta "Centro" dentro de C:xampp/htdocs para poder ejecutar la base de datos corectamente en xampp. 
 2. Ejecutar el archivo "centro.sql" para la creación de la base de datos.
 3. Para ejecutar corectamente el proyecto se debe ejecutar el comando npm install dentro de 
-la carpeta Examen3_MirkoAlarcon y para la visualización de la página, ejecutar el comando ng serve en el terminal.
+la carpeta Examen3TW_MirkoAlarcon y para la visualización de la página, ejecutar el comando ng serve en el terminal.
