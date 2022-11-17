@@ -81,7 +81,7 @@ p.ven {
   text-align: center; 
 }
 div.caja {
-  background-color: #40a6ff;
+  background-color: rgb(42, 157, 143);
   margin-left: 250px;
   margin-right: 250px;
   margin-top: 30px;
@@ -182,4 +182,11 @@ label, input{
 }
 #txt{
   width: 15rem;
+  border-radius: 10px;
+}
+#txt:hover{
+  border-bottom: 5px solid red;
+}
+#mapa{
+  margin-left: 80px;
 }
