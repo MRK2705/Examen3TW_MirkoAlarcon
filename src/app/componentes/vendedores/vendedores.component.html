@@ -1,0 +1,69 @@
+<div class="card-group">
+    <div class="card">
+      <img src="https://assets.morningconsult.com/wp-uploads/2022/04/18141310/220412_Streaming-Habits.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Categoría Streaming</h5>
+        <p class="card-text">En esta categoría podra encotrar servicios como Netflix, HBO Max, Disney+, Star+, Apple TV, Paramount+ y más plataformas para su entretenimiento.</p>
+        <p class="card-text"><small class="text-muted">Vendedor: Carlos Camargo</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://10beasts.com/images/Consoles-Gamepads-Illustration-300x300.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Categoría Gaming</h5>
+        <p class="card-text">En esta categoría podra encotrar los mejores servicios de juegos como Playstation, Xbox, Nintendo y PC, los mejores juegos, al mejor precio.</p>
+        <p class="card-text"><small class="text-muted">Vendedora: Geraldine Ibieta</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://cdn.pocket-lint.com/r/s/1200x630/assets/images/126892-apps-news-vs-which-is-the-best-music-streaming-service-in-the-uk-image14-3ogyblmzp6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Categoría Music</h5>
+        <p class="card-text">En esta categoría podra encontrar los mejores servicios de música disponibles como Spotify, Apple Music, Deezer, Sound cloud y muchas plataformas más.</p>
+        <p class="card-text"><small class="text-muted">Vendedor: Mirko Alarcon</small></p>
+      </div>
+    </div>
+  </div>
+<div class="card">
+
+    <div class="card-header">
+        Consulta por nuestros servicios
+    </div>
+    <div class="card-body">
+       <form [formGroup]="formularioDeServicios"  (ngSubmit)="enviarDatos()">
+        <div class="mb-3">
+          <label for="" class="form-label">Nombre:</label>
+          <input type="text"
+            class="form-control" name="" formControlName="nombre" id="" aria-describedby="helpId" placeholder="Ingrese su nombre">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Correo electrónico: </label>
+          <input type="text"
+            class="form-control" name="" formControlName="correo" id="" aria-describedby="helpId" placeholder="Ingrese su correo">
+        </div>
+
+        <label for="" class="form-label">Categorías: </label>
+        <div *ngFor="let categoria of categoria">
+          <input 
+          type="radio"
+          name="cir"
+          value="{{categoria}}"
+          (change)="radioChangeHandler($event)">
+          <i>{{categoria}}</i>
+        </div>
+        &nbsp;
+        <div class="mb-3">
+            <label for="" class="form-label">Vendedor: </label>
+            <fieldset disabled>
+            <input type="text" ngModel="{{selectCategoria}}" 
+              class="form-control" name="" desabled formControlName="vendedor" id="" aria-describedby="helpId" placeholder="Vendedor">
+            </fieldset>
+        </div>
+
+        <div class="btn-group" role="group">
+            <button type="submit" class="btn btn-success">Realizar consulta</button>
+            <button type="button" class="btn btn-primary">Cancelar</button>
+        </div>
+       </form>
+    </div>
+</div>

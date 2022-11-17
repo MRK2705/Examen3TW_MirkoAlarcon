@@ -1,0 +1,55 @@
+.navbar-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.navbar-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    ;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-item.first {
+    margin-left: auto;
+}
+
+.nav-item.last {
+    margin-right: auto;
+}
+
+.navbar li {
+    align-content: right;
+    border-right: 3px solid rgb(214, 40, 40);
+}
+
+.navbar a{
+    color: #ffffff;
+}
+
+.navbar-nav{
+    margin-left: 550px;
+}
+
+.navbar a:hover {
+    color: rgb(214, 40, 40);
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.navbar a:active {
+    color: rgb(214, 40, 40) !important;
+    font-weight: bold;
+}
+
+.active {
+    color: #ffffff !important;
+}

@@ -1,0 +1,30 @@
+<img src="https://magictourcolombia.com/wp-content/uploads/2022/03/%C2%A1Solicitalo-aqu%C3%AD-2.png" width="400" height="200" alt="" border="0">
+<div class="card">
+    <div class="card-header">
+        Servicios de Streaming-Gaming-Music
+    </div>
+    <div class="card-body">
+       <form [formGroup]="formularioDeReservas"  (ngSubmit)="enviarDatos()">
+        <div class="mb-3">
+          <label for="" class="form-label">Nombres y Apellidos:</label>
+          <input type="text"
+            class="form-control" name="" formControlName="nombre" id="" aria-describedby="helpId" placeholder="Ingrese su nombre">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Tipo de Servicio: </label>
+          <input type="text"
+            class="form-control" name="" formControlName="servicio" id="" aria-describedby="helpId" placeholder="Ingrese el servicio a reservar">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Fecha : </label>
+            <input type="date"
+              class="form-control" name="" formControlName="fecha" id="" aria-describedby="helpId" placeholder="Fecha">
+          </div>
+        <div class="btn-group" role="group">
+            <button type="submit" class="btn btn-success">Reservar </button>
+            <button type="button" class="btn btn-primary">Rechazar</button>
+        </div>
+       </form>
+    </div>
+</div>
+
